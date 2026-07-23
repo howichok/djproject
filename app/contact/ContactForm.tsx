@@ -14,7 +14,7 @@ export function ContactForm() {
     const story = String(data.get("story") || "");
     const subject = encodeURIComponent(`Wedding enquiry — ${name || "new couple"}`);
     const body = encodeURIComponent(
-      `Name(s): ${name}\nEmail: ${email}\nDate: ${date}\nLocation in Italy: ${place}\nInterested in: ${services}\n\nWhat we are dreaming of:\n${story}`,
+      `Name(s): ${name}\nEmail: ${email}\nDate: ${date}\nLocation in Italy: ${place}\nInterested in: ${services}\n\nWhat matters most:\n${story}`,
     );
     window.location.href = `mailto:bookings@djpositiv.com?subject=${subject}&body=${body}`;
   }
@@ -39,28 +39,28 @@ export function ContactForm() {
       </div>
       <div className="field field-full">
         <label htmlFor="services">What do you need?</label>
-        <select id="services" name="services" defaultValue="Film + DJ">
-          <option>Film + DJ</option>
-          <option>Wedding film</option>
-          <option>DJ + sound</option>
+        <select id="services" name="services" defaultValue="Image + music">
+          <option>Image + music</option>
+          <option>Moving image</option>
+          <option>Live music</option>
           <option>Not sure yet</option>
         </select>
       </div>
       <div className="field field-full">
-        <label htmlFor="story">Tell me what you&apos;re dreaming of</label>
+        <label htmlFor="story">What matters most?</label>
         <textarea
           id="story"
           name="story"
           rows={5}
-          placeholder="The people, the feeling, the music you love…"
+          placeholder="A few words about the day you are planning…"
           required
         />
       </div>
       <button className="button button-lime form-submit" type="submit">
-        Start the conversation <span aria-hidden="true">↗</span>
+        Send the details <span aria-hidden="true">↗</span>
       </button>
       <p className="form-note">
-        No mailing list. No pressure. Prefer to write directly?{" "}
+        Your email is used only to reply to this enquiry. Write directly:{" "}
         <a href="mailto:bookings@djpositiv.com">bookings@djpositiv.com</a>
       </p>
     </form>

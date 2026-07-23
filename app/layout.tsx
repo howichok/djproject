@@ -31,22 +31,22 @@ const siteOrigin =
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   title: {
-    default: "DJ POSITIV — Wedding Films + DJ Experiences",
+    default: "DJ POSITIV — Image + Music for Italian Weddings",
     template: "%s — DJ POSITIV",
   },
   description:
-    "Cinematic wedding films and room-moving DJ experiences for weddings across Italy.",
+    "Moving image and live music, planned together for weddings across Italy.",
   openGraph: {
     title: "DJ POSITIV",
     description:
-      "Wedding films + DJ experiences across Italy. Film the feeling. Score the night.",
+      "Moving image + live music for weddings across Italy.",
     type: "website",
     images: [
       {
         url: new URL("/og.png", siteOrigin).toString(),
         width: 1731,
         height: 909,
-        alt: "DJ POSITIV — Wedding Films + DJ Experiences",
+        alt: "DJ POSITIV — Image + Music for Italian Weddings",
       },
     ],
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DJ POSITIV",
     description:
-      "Wedding films + DJ experiences across Italy. Film the feeling. Score the night.",
+      "Moving image + live music for weddings across Italy.",
     images: [new URL("/og.png", siteOrigin).toString()],
   },
 };

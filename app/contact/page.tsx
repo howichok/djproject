@@ -8,31 +8,33 @@ export default function ContactPage() {
       <main className="inner-page contact-page">
         <section className="contact-hero">
           <div className="contact-title-wrap">
-            <p className="eyebrow">Italy weddings only</p>
+            <p className="eyebrow">Available across Italy</p>
             <h1 className="display">
-              Tell me about
+              Start with
               <br />
-              <em>your day.</em>
+              <em>the date.</em>
             </h1>
           </div>
           <div className="contact-human-note">
             <p>
-              You&apos;re not writing to a booking desk. You&apos;re writing
-              directly to me.
+              A short message is enough. I&apos;ll ask the right questions from
+              there.
             </p>
-            <span>— DJ POSITIV</span>
+            <span>Personal reply · Two working days</span>
           </div>
         </section>
 
         <section className="contact-body" aria-label="Wedding enquiry">
           <div className="contact-aside">
-            <p className="eyebrow">A real conversation</p>
+            <p className="eyebrow">Tell me the basics</p>
             <h2>
-              You don&apos;t need to have it <em>all figured out.</em>
+              Date. City.
+              <br />
+              <em>What matters most.</em>
             </h2>
             <p>
-              A date, a place and a feeling are enough. Tell me what matters to
-              you, and I&apos;ll come back with honest ideas—without pressure.
+              That is enough for a first reply. I&apos;ll tell you clearly if
+              I&apos;m available and what makes sense for your wedding.
             </p>
             <dl>
               <div>
@@ -57,12 +59,13 @@ export default function ContactPage() {
         </section>
 
         <section className="contact-promise">
-          <p className="eyebrow">What happens next</p>
+          <p className="eyebrow">A straight answer</p>
           <blockquote>
-            If your date is free, we start with a <em>conversation</em>—not a
-            sales call.
+            Available means available.
+            <br />
+            <em>No long sales sequence.</em>
           </blockquote>
-          <p>No template pitch. No pressure. Just a clear answer from a real person.</p>
+          <p>You&apos;ll get a personal reply with the next useful step.</p>
         </section>
       </main>
       <SiteFooter />

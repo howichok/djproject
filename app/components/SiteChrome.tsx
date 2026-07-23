@@ -17,7 +17,7 @@ export function SiteHeader({ active }: { active: ActivePage }) {
         <Link className={active === "contact" ? "active" : ""} href="/contact">Contact</Link>
       </nav>
       <Link className="header-cta" href="/contact">
-        Check your date <span aria-hidden="true">↗</span>
+        Ask about your date <span aria-hidden="true">↗</span>
       </Link>
     </header>
   );
@@ -43,9 +43,8 @@ export function SiteFooter() {
       </div>
       <div className="footer-grid">
         <p>
-          Wedding films and DJ experiences
-          <br />
-          made with feeling.
+          Moving image and live music
+          <br />for weddings across Italy.
         </p>
         <div>
           <p className="footer-label">Explore</p>
@@ -61,7 +60,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-base">
         <span>© 2026 DJ POSITIV</span>
-        <span>Film the feeling. Score the night.</span>
+        <span>Italy · By date only</span>
       </div>
     </footer>
   );

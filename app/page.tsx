@@ -4,28 +4,28 @@ import { SiteFooter, SiteHeader, WaveBars } from "./components/SiteChrome";
 const movements = [
   {
     number: "01",
-    id: "quiet",
-    eyebrow: "The quiet before",
-    title: "Anticipation has its own soundtrack.",
-    copy: "The dress before the zip. A hand finding another hand. The room taking one last breath. We stay close enough to feel it and quiet enough not to change it.",
+    id: "morning",
+    eyebrow: "Morning",
+    title: "Let the day happen.",
+    copy: "No retakes. No posing marathon. We notice what matters without pulling you away from it.",
     image: "/images/veil-portrait.jpg",
     alt: "Editorial portrait of a bride wearing a pearl-detailed veil",
   },
   {
     number: "02",
-    id: "promise",
-    eyebrow: "The promise",
-    title: "Your film should move like the day felt.",
-    copy: "Not a highlight reel assembled by habit. A living edit built from your voices, the pauses between them, and the people who made the room feel like home.",
+    id: "ceremony",
+    eyebrow: "Ceremony",
+    title: "Keep the voices.",
+    copy: "The words, the nerves and the laugh that broke the tension—recorded clearly and edited without turning them into a trailer.",
     image: "/images/wedding-dance.jpg",
     alt: "Newlyweds dancing together at an outdoor night reception",
   },
   {
     number: "03",
-    id: "release",
-    eyebrow: "The release",
-    title: "Then the room changes key.",
-    copy: "We read the floor in real time—no rigid playlist, no microphone theatre. Just a set that knows when to hold back, when to turn, and when to let the chorus hit.",
+    id: "after-dark",
+    eyebrow: "After dark",
+    title: "Give the party its own shape.",
+    copy: "The music grows from your taste, your guests and what is actually happening on the floor—not from a standard wedding set.",
     image: "/images/dj-console.jpg",
     alt: "DJ mixing on a console under vivid club lighting",
   },
@@ -41,24 +41,23 @@ export default function Home() {
         <section className="home-hero" aria-labelledby="home-title">
           <div className="hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow hero-eyebrow">Wedding films + DJ experiences in Italy</p>
+              <p className="eyebrow hero-eyebrow">Film + music for weddings in Italy</p>
               <h1 id="home-title" className="display hero-title">
-                <span>The night</span>
-                <span>you never</span>
-                <span className="italic-line">want to</span>
-                <span>forget.</span>
+                <span>Your wedding.</span>
+                <span className="italic-line">Fully</span>
+                <span>alive.</span>
               </h1>
               <div className="hero-bottom">
                 <p>
-                  We film the glances you almost missed, then score the room
-                  until the last light comes on.
+                  Honest images. A dance floor with its own pulse. Planned
+                  together, never copied from another wedding.
                 </p>
                 <div className="button-row">
                   <a className="button button-lime" href="#experience">
-                    See the experience <span aria-hidden="true">↘</span>
+                    See how it works <span aria-hidden="true">↘</span>
                   </a>
                   <Link className="text-link" href="/contact">
-                    Check your date <span aria-hidden="true">↗</span>
+                    Ask about your date <span aria-hidden="true">↗</span>
                   </Link>
                 </div>
               </div>
@@ -85,18 +84,18 @@ export default function Home() {
 
           <div className="hero-ticker" aria-hidden="true">
             <div>
-              <span>DJ POSITIV</span><b>✦</b><span>WEDDING FILMS</span><b>✦</b>
-              <span>DJ + SOUND</span><b>✦</b><span>DJ POSITIV</span><b>✦</b>
-              <span>WEDDING FILMS</span><b>✦</b><span>DJ + SOUND</span><b>✦</b>
+              <span>DJ POSITIV</span><b>✦</b><span>ITALY ONLY</span><b>✦</b>
+              <span>IMAGE + MUSIC</span><b>✦</b><span>DJ POSITIV</span><b>✦</b>
+              <span>ITALY ONLY</span><b>✦</b><span>IMAGE + MUSIC</span><b>✦</b>
             </div>
           </div>
         </section>
 
         <section id="experience" className="story-prologue">
           <h2 className="display prologue-title">
-            It starts with a <em>whisper.</em>
+            One wedding.
             <br />
-            It ends at full volume.
+            <em>No copy-paste.</em>
           </h2>
         </section>
 
@@ -119,7 +118,7 @@ export default function Home() {
                 <div className="chapter-image-mask">
                   <img src={movement.image} alt={movement.alt} loading="lazy" />
                 </div>
-                {movement.id === "release" && (
+                {movement.id === "after-dark" && (
                   <div className="release-wave" aria-hidden="true">
                     <WaveBars />
                   </div>
@@ -129,95 +128,76 @@ export default function Home() {
           ))}
         </section>
 
-        <section className="amplitude-strip" aria-label="Our creative approach">
-          <p className="eyebrow">The DJ POSITIV approach</p>
+        <section className="amplitude-strip" aria-label="Made around each couple">
+          <p className="eyebrow">Made around you</p>
           <div className="amplitude-copy display">
-            <span>Real people.</span>
-            <span className="italic-statement">Real rhythm.</span>
-            <span>No performance required.</span>
+            <span>Unforced.</span>
+            <span className="italic-statement">Specific.</span>
+            <span>Alive.</span>
           </div>
         </section>
 
-        <section className="services-section" aria-labelledby="services-title">
-          <div className="section-heading">
-            <p className="eyebrow">Two disciplines / one point of view</p>
-            <h2 id="services-title" className="display">
-              Keep the <em>feeling.</em>
+        <section className="signature-section" aria-labelledby="signature-title">
+          <div className="signature-intro">
+            <p className="eyebrow">One direction from start to finish</p>
+            <h2 id="signature-title" className="display">
+              Your wedding,
               <br />
-              Move the room.
+              <em>held together.</em>
             </h2>
+            <p>
+              Moving image and live music planned side by side, so the day has
+              one pace instead of separate suppliers pulling in different directions.
+            </p>
           </div>
 
-          <div className="service-split">
-            <article className="service-panel service-film">
-              <div className="service-panel-head">
-                <p className="service-index">01</p>
-                <p className="eyebrow">Wedding films</p>
-              </div>
-              <h3>Frame by frame</h3>
-              <p className="service-lead">
-                Story-first films with the polish of an editorial and the
-                honesty of a home movie.
-              </p>
-              <ul>
-                <li>The day, honestly observed</li>
-                <li>Vows and voices, kept forever</li>
-                <li>A film that feels like you</li>
-              </ul>
-              <Link className="panel-link" href="/contact">
-                Build your film coverage <span aria-hidden="true">↗</span>
-              </Link>
+          <div className="signature-rows">
+            <article>
+              <span>01</span>
+              <p className="eyebrow">Moving image</p>
+              <h3>Nothing staged.</h3>
+              <p>Natural coverage, sharp editing and the voices worth keeping.</p>
             </article>
-
-            <article className="service-panel service-dj">
-              <div className="service-panel-head">
-                <p className="service-index">02</p>
-                <p className="eyebrow">DJ + sound</p>
-              </div>
-              <h3>Beat by beat</h3>
-              <p className="service-lead">
-                A room-aware set shaped around your taste—not a wedding
-                playlist with your names added.
-              </p>
-              <ul>
-                <li>A set built around your taste</li>
-                <li>Sound shaped for the room</li>
-                <li>Energy read in real time</li>
-              </ul>
-              <Link className="panel-link" href="/contact">
-                Start your sound brief <span aria-hidden="true">↗</span>
-              </Link>
+            <article>
+              <span>02</span>
+              <p className="eyebrow">Live music</p>
+              <h3>Nothing generic.</h3>
+              <p>A set guided by your taste and the people in front of us.</p>
             </article>
           </div>
+
+          <Link className="button button-dark signature-link" href="/contact">
+            Talk about your date <span aria-hidden="true">↗</span>
+          </Link>
         </section>
 
         <section className="process-section" aria-labelledby="process-title">
           <div className="process-intro">
-            <p className="eyebrow">Simple from the start</p>
+            <p className="eyebrow">How it works</p>
             <h2 id="process-title" className="display">
-              One conversation.
+              Less planning noise.
               <br />
-              <em>No crossed wires.</em>
+              <em>More certainty.</em>
             </h2>
             <p>
-              Tell us how you want it to feel. We take care of the rest.
+              One call to understand what matters. One clear proposal after that.
             </p>
           </div>
           <ol className="process-list">
             <li>
               <span className="process-no">01</span>
-              <h3>Tell us about you</h3>
-              <p>Your people, your music, your kind of night.</p>
+              <h3>Send the basics</h3>
+              <p>Date, city and what you want from the day.</p>
             </li>
             <li>
               <span className="process-no">02</span>
-              <h3>We make it yours</h3>
-              <p>One thoughtful plan for the film and the dance floor.</p>
+              <h3>Get a clear proposal</h3>
+              <p>Straight answers, honest scope and no inflated package.</p>
             </li>
             <li>
               <span className="process-no">03</span>
-              <h3>Be completely there</h3>
-              <p>We read the room. You live the moment.</p>
+              <h3>Enjoy your wedding</h3>
+              <p>We arrive prepared and stay tuned in.</p>
             </li>
           </ol>
         </section>
@@ -228,14 +208,14 @@ export default function Home() {
             <i className="pulse-orbit pulse-orbit-two" />
             <span>DP</span>
           </div>
-          <p className="eyebrow">Italy weddings · Now booking 2026—2027</p>
+          <p className="eyebrow">Italy · 2026—2027</p>
           <h2 className="display">
-            Let&apos;s make
+            Ready when
             <br />
-            <em>some noise.</em>
+            <em>you are.</em>
           </h2>
           <Link className="button button-dark" href="/contact">
-            Check your date <span aria-hidden="true">↗</span>
+            Tell me the date <span aria-hidden="true">↗</span>
           </Link>
         </section>
       </main>

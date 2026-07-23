@@ -184,14 +184,12 @@ img {
 }
 
 .header-cta span,
-.text-link span,
-.panel-link span {
+.text-link span {
   transition: transform 220ms ease;
 }
 
 .header-cta:hover span,
-.text-link:hover span,
-.panel-link:hover span {
+.text-link:hover span {
   transform: translate(3px, -3px);
 }
 
@@ -517,7 +515,6 @@ img {
 .prologue-title em,
 .closing-cta h2 em,
 .contact-hero h1 em,
-.section-heading h2 em,
 .process-intro h2 em {
   font-family: var(--font-serif), Georgia, serif;
   font-weight: 500;
@@ -611,8 +608,8 @@ img {
   transition: filter 700ms ease, transform 900ms cubic-bezier(.2,.7,.2,1);
 }
 
-.chapter-quiet .chapter-image-mask img { object-position: center 24%; }
-.chapter-release .chapter-image-mask img { object-position: center; }
+.chapter-morning .chapter-image-mask img { object-position: center 24%; }
+.chapter-after-dark .chapter-image-mask img { object-position: center; }
 
 .story-chapter:hover .chapter-image-mask img {
   filter: grayscale(.2) contrast(1.05);
@@ -662,108 +659,90 @@ img {
   text-transform: none;
 }
 
-.services-section {
+.signature-section {
+  padding: 8rem var(--page-pad);
   background: var(--ivory);
   color: var(--ink);
 }
 
-.section-heading {
-  padding: 8rem var(--page-pad);
-  border-top: 1px solid rgba(8,9,8,.25);
+.signature-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, .75fr);
+  gap: clamp(3rem, 9vw, 10rem);
+  align-items: end;
 }
 
-.section-heading .eyebrow {
-  margin-bottom: 3rem;
+.signature-intro .eyebrow {
+  grid-column: 1 / -1;
 }
 
-.section-heading h2 {
-  font-size: clamp(4.4rem, 10vw, 10.5rem);
+.signature-intro h2 {
+  font-size: clamp(4.4rem, 9.5vw, 10rem);
 }
 
-.section-heading h2 em,
+.signature-intro h2 em,
 .process-intro h2 em {
   color: var(--lime);
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -.065em;
+  text-transform: none;
 }
 
-.section-heading h2 em {
+.signature-intro h2 em {
   color: var(--ink);
 }
 
-.service-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.signature-intro > p:last-child {
+  max-width: 31rem;
+  margin: 0 0 .8rem;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(1.35rem, 2.1vw, 2rem);
+  line-height: 1.18;
+}
+
+.signature-rows {
+  margin-top: 7rem;
   border-top: 1px solid var(--ink);
 }
 
-.service-panel {
-  min-height: 47rem;
-  padding: clamp(2rem, 4vw, 4.5rem);
-  display: flex;
-  flex-direction: column;
+.signature-rows article {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(8,9,8,.35);
+  display: grid;
+  grid-template-columns: 4rem minmax(9rem, .45fr) minmax(16rem, 1fr) minmax(16rem, .7fr);
+  gap: 1.5rem;
+  align-items: baseline;
 }
 
-.service-panel + .service-panel {
-  border-left: 1px solid var(--ink);
-}
-
-.service-panel-head {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-index {
-  margin: 0;
+.signature-rows article > span {
   font-family: var(--font-serif), serif;
   font-size: 1.2rem;
   font-style: italic;
 }
 
-.service-panel h3 {
-  margin: auto 0 1.2rem;
+.signature-rows h3 {
+  margin: 0;
   font-family: var(--font-condensed), sans-serif;
-  font-size: clamp(4rem, 7vw, 7rem);
+  font-size: clamp(3.2rem, 6vw, 6.3rem);
   font-weight: 800;
-  line-height: .78;
+  line-height: .82;
   letter-spacing: -.045em;
   text-transform: uppercase;
 }
 
-.service-lead {
-  max-width: 34rem;
-  margin: 0 0 3rem;
-  font-family: var(--font-serif), serif;
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  line-height: 1.08;
-}
-
-.service-panel ul {
+.signature-rows article > p:last-child {
+  max-width: 24rem;
   margin: 0;
-  padding: 0;
-  border-top: 1px solid currentColor;
-  list-style: none;
-}
-
-.service-panel li {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(8,9,8,.3);
   font-family: var(--font-serif), serif;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-style: italic;
   line-height: 1.25;
 }
 
-.panel-link {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: .68rem;
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.service-dj {
-  background: var(--lime);
+.signature-link {
+  margin-top: 3rem;
 }
 
 .process-section {
@@ -1125,6 +1104,14 @@ img {
   font-size: clamp(4.2rem, 7.8vw, 8rem);
 }
 
+.origin-copy h2 em {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -.065em;
+  text-transform: none;
+}
+
 .origin-copy > p:not(.eyebrow) {
   max-width: 33rem;
   color: var(--sage);
@@ -1425,7 +1412,7 @@ img {
 @supports (animation-timeline: view()) {
   .chapter-copy > div,
   .chapter-visual,
-  .service-panel,
+  .signature-rows article,
   .process-list li,
   .manifesto-list article {
     animation: reveal-up linear both;
@@ -1465,7 +1452,14 @@ img {
   .hero-wave { width: 50%; }
   .story-chapter { grid-template-columns: 1fr; min-height: auto; padding-block: 7rem; }
   .chapter-image-mask { height: 75svh; }
-  .service-panel { min-height: 42rem; }
+  .signature-intro { grid-template-columns: 1fr; }
+  .signature-intro .eyebrow { grid-column: auto; }
+  .signature-rows article {
+    grid-template-columns: 3rem .45fr 1fr;
+  }
+  .signature-rows article > p:last-child {
+    grid-column: 3;
+  }
   .process-section,
   .manifesto-section,
   .contact-body { grid-template-columns: 1fr; }
@@ -1512,12 +1506,18 @@ img {
   .amplitude-copy { font-size: clamp(3.4rem, 17vw, 5.6rem); line-height: .92; }
   .amplitude-copy span:nth-child(2),
   .amplitude-copy span:nth-child(3) { align-self: flex-start; }
-  .section-heading { padding-block: 5rem; }
-  .section-heading h2 { font-size: clamp(3.8rem, 17vw, 5.5rem); }
-  .service-split { grid-template-columns: 1fr; }
-  .service-panel { min-height: 40rem; padding: 2rem 1.15rem; }
-  .service-panel + .service-panel { border-left: 0; border-top: 1px solid var(--ink); }
-  .service-panel h3 { font-size: 4.2rem; }
+  .signature-section { padding-block: 5rem; }
+  .signature-intro h2 { font-size: clamp(3.8rem, 17vw, 5.5rem); }
+  .signature-rows { margin-top: 4rem; }
+  .signature-rows article {
+    grid-template-columns: 2.2rem 1fr;
+    gap: .8rem 1rem;
+  }
+  .signature-rows h3,
+  .signature-rows article > p:last-child {
+    grid-column: 2;
+  }
+  .signature-rows article > p:last-child { font-size: 1.05rem; }
   .process-section { padding-block: 6rem; gap: 4rem; }
   .process-intro h2 { font-size: 4.2rem; }
   .process-list li { grid-template-columns: 2.5rem 1fr; min-height: 15rem; }
