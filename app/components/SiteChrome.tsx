@@ -56,7 +56,7 @@ export function SiteFooter() {
         <div>
           <p className="footer-label">Enquiries</p>
           <a href="mailto:bookings@djpositiv.com">bookings@djpositiv.com</a>
-          <p>Italy · Europe · Wherever the story goes</p>
+          <p>Available for weddings across Italy</p>
         </div>
       </div>
       <div className="footer-base">

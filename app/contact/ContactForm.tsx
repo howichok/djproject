@@ -7,14 +7,14 @@ export function ContactForm() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
     const date = String(data.get("date") || "Date not decided");
     const place = String(data.get("location") || "");
-    const guests = String(data.get("guests") || "");
     const services = String(data.get("services") || "");
     const story = String(data.get("story") || "");
     const subject = encodeURIComponent(`Wedding enquiry — ${name || "new couple"}`);
     const body = encodeURIComponent(
-      `Name(s): ${name}\nDate: ${date}\nLocation: ${place}\nGuests: ${guests}\nInterested in: ${services}\n\nTell us about it:\n${story}`,
+      `Name(s): ${name}\nEmail: ${email}\nDate: ${date}\nLocation in Italy: ${place}\nInterested in: ${services}\n\nWhat we are dreaming of:\n${story}`,
     );
     window.location.href = `mailto:bookings@djpositiv.com?subject=${subject}&body=${body}`;
   }
@@ -34,12 +34,8 @@ export function ContactForm() {
         <input id="date" name="date" type="date" />
       </div>
       <div className="field">
-        <label htmlFor="location">Location</label>
-        <input id="location" name="location" type="text" placeholder="City / venue" />
-      </div>
-      <div className="field">
-        <label htmlFor="guests">Approx. guests</label>
-        <input id="guests" name="guests" type="number" min="1" placeholder="120" />
+        <label htmlFor="location">Where in Italy?</label>
+        <input id="location" name="location" type="text" placeholder="City / venue" required />
       </div>
       <div className="field field-full">
         <label htmlFor="services">What do you need?</label>
@@ -51,21 +47,20 @@ export function ContactForm() {
         </select>
       </div>
       <div className="field field-full">
-        <label htmlFor="story">What should the night feel like?</label>
+        <label htmlFor="story">Tell me what you&apos;re dreaming of</label>
         <textarea
           id="story"
           name="story"
           rows={5}
-          placeholder="The atmosphere, the music you love, the part you cannot wait for…"
+          placeholder="The people, the feeling, the music you love…"
           required
         />
       </div>
       <button className="button button-lime form-submit" type="submit">
-        Open enquiry email <span aria-hidden="true">↗</span>
+        Start the conversation <span aria-hidden="true">↗</span>
       </button>
       <p className="form-note">
-        This opens your email app with the details filled in. Prefer to write
-        directly?{" "}
+        No mailing list. No pressure. Prefer to write directly?{" "}
         <a href="mailto:bookings@djpositiv.com">bookings@djpositiv.com</a>
       </p>
     </form>

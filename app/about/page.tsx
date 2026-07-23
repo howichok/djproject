@@ -53,10 +53,6 @@ export default function AboutPage() {
               src="/images/dj-console.jpg"
               alt="Hands working across a professional DJ console"
             />
-            <p className="film-label">
-              <span>THE BOOTH / THE EDIT</span>
-              <span>SAME SENSE OF TIMING</span>
-            </p>
           </div>
           <div className="origin-copy">
             <p className="eyebrow">Why both?</p>
@@ -69,7 +65,8 @@ export default function AboutPage() {
             <p>
               DJ POSITIV brings those instincts together. The result is a
               quieter presence during the intimate parts, a sharper sense of
-              the whole day&apos;s arc, and one less handoff for you to manage.
+              the whole day&apos;s arc, and one less handoff for weddings
+              anywhere in Italy.
             </p>
           </div>
         </section>

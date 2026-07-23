@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     template: "%s — DJ POSITIV",
   },
   description:
-    "Cinematic wedding films and room-moving DJ experiences, created as one seamless story.",
+    "Cinematic wedding films and room-moving DJ experiences for weddings across Italy.",
   openGraph: {
     title: "DJ POSITIV",
     description:
-      "Wedding films + DJ experiences. Film the feeling. Score the night.",
+      "Wedding films + DJ experiences across Italy. Film the feeling. Score the night.",
     type: "website",
     images: [
       {
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DJ POSITIV",
     description:
-      "Wedding films + DJ experiences. Film the feeling. Score the night.",
+      "Wedding films + DJ experiences across Italy. Film the feeling. Score the night.",
     images: [new URL("/og.png", siteOrigin).toString()],
   },
 };
