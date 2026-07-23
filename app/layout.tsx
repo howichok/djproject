@@ -26,33 +26,33 @@ const sans = DM_Sans({
 });
 
 const siteOrigin =
-  process.env.URL ?? process.env.DEPLOY_PRIME_URL ?? "https://vowvolume.studio";
+  process.env.URL ?? process.env.DEPLOY_PRIME_URL ?? "https://djpositiv.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   title: {
-    default: "Vow / Volume — Wedding Films + DJ Experiences",
-    template: "%s — Vow / Volume",
+    default: "DJ POSITIV — Wedding Films + DJ Experiences",
+    template: "%s — DJ POSITIV",
   },
   description:
     "Cinematic wedding films and room-moving DJ experiences, created as one seamless story.",
   openGraph: {
-    title: "Vow / Volume",
+    title: "DJ POSITIV",
     description:
       "Wedding films + DJ experiences. Film the feeling. Score the night.",
     type: "website",
     images: [
       {
         url: new URL("/og.png", siteOrigin).toString(),
-        width: 1920,
-        height: 1005,
-        alt: "Vow / Volume — Wedding Films + DJ Experiences",
+        width: 1731,
+        height: 909,
+        alt: "DJ POSITIV — Wedding Films + DJ Experiences",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vow / Volume",
+    title: "DJ POSITIV",
     description:
       "Wedding films + DJ experiences. Film the feeling. Score the night.",
     images: [new URL("/og.png", siteOrigin).toString()],

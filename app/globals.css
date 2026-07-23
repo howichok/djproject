@@ -429,7 +429,7 @@ img {
 
 .record-seal span {
   font-family: var(--font-serif), serif;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-style: italic;
   color: var(--lime);
 }
@@ -945,9 +945,83 @@ img {
 
 .closing-ring span,
 .about-disc span {
+  position: relative;
+  z-index: 2;
   font-family: var(--font-condensed), sans-serif;
   font-size: clamp(4rem, 9vw, 9rem);
   font-weight: 800;
+}
+
+.closing-ring {
+  animation: closing-heartbeat 1.8s cubic-bezier(.2,.7,.25,1) infinite;
+}
+
+.closing-ring::before {
+  animation: inner-heartbeat 1.8s cubic-bezier(.2,.7,.25,1) infinite;
+}
+
+.closing-ring::after {
+  animation: center-heartbeat 1.8s cubic-bezier(.2,.7,.25,1) infinite;
+}
+
+.closing-ring span {
+  animation: monogram-heartbeat 1.8s cubic-bezier(.2,.7,.25,1) infinite;
+}
+
+.pulse-orbit {
+  position: absolute;
+  inset: -1px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulse-orbit 1.8s cubic-bezier(.15,.65,.2,1) infinite;
+}
+
+.pulse-orbit-two {
+  animation-delay: .9s;
+}
+
+.closing-cta h2 em {
+  display: inline-block;
+  transform-origin: left center;
+  animation: noise-heartbeat 1.8s cubic-bezier(.2,.7,.25,1) infinite;
+}
+
+@keyframes closing-heartbeat {
+  0%, 100% { transform: translateY(-50%) scale(.985); }
+  12% { transform: translateY(-50%) scale(1.025); }
+  22% { transform: translateY(-50%) scale(.995); }
+  34% { transform: translateY(-50%) scale(1.045); }
+  48% { transform: translateY(-50%) scale(1); }
+}
+
+@keyframes inner-heartbeat {
+  0%, 100% { inset: 14%; opacity: .38; }
+  14%, 34% { inset: 11%; opacity: .75; }
+  48% { inset: 14%; opacity: .38; }
+}
+
+@keyframes center-heartbeat {
+  0%, 100% { transform: scale(.75); opacity: .55; }
+  14%, 34% { transform: scale(1.35); opacity: 1; }
+  48% { transform: scale(.75); opacity: .55; }
+}
+
+@keyframes monogram-heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%, 34% { transform: scale(1.07); }
+  48% { transform: scale(1); }
+}
+
+@keyframes pulse-orbit {
+  0% { transform: scale(.9); opacity: .55; }
+  72%, 100% { transform: scale(1.18); opacity: 0; }
+}
+
+@keyframes noise-heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%, 34% { transform: scale(1.018); }
+  48% { transform: scale(1); }
 }
 
 .site-footer {

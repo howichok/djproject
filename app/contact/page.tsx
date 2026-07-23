@@ -42,8 +42,8 @@ export default function ContactPage() {
               <div>
                 <dt>Direct</dt>
                 <dd>
-                  <a href="mailto:hello@vowvolume.studio">
-                    hello@vowvolume.studio
+                  <a href="mailto:bookings@djpositiv.com">
+                    bookings@djpositiv.com
                   </a>
                 </dd>
               </div>

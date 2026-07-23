@@ -16,7 +16,7 @@ export function ContactForm() {
     const body = encodeURIComponent(
       `Name(s): ${name}\nDate: ${date}\nLocation: ${place}\nGuests: ${guests}\nInterested in: ${services}\n\nTell us about it:\n${story}`,
     );
-    window.location.href = `mailto:hello@vowvolume.studio?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:bookings@djpositiv.com?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -66,7 +66,7 @@ export function ContactForm() {
       <p className="form-note">
         This opens your email app with the details filled in. Prefer to write
         directly?{" "}
-        <a href="mailto:hello@vowvolume.studio">hello@vowvolume.studio</a>
+        <a href="mailto:bookings@djpositiv.com">bookings@djpositiv.com</a>
       </p>
     </form>
   );

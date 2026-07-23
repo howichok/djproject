@@ -78,7 +78,7 @@ export default function Home() {
                 <span className="frame-corner frame-corner-b" aria-hidden="true" />
               </div>
               <div className="record-seal" aria-hidden="true">
-                <span>V</span>
+                <span>DP</span>
               </div>
               <div className="hero-timecode" aria-hidden="true">
                 REC&nbsp; 23:48:16
@@ -93,9 +93,9 @@ export default function Home() {
 
           <div className="hero-ticker" aria-hidden="true">
             <div>
+              <span>DJ POSITIV</span><b>✦</b><span>WEDDING FILMS</span><b>✦</b>
+              <span>DJ + SOUND</span><b>✦</b><span>DJ POSITIV</span><b>✦</b>
               <span>WEDDING FILMS</span><b>✦</b><span>DJ + SOUND</span><b>✦</b>
-              <span>ONE CREATIVE TEAM</span><b>✦</b><span>WEDDING FILMS</span><b>✦</b>
-              <span>DJ + SOUND</span><b>✦</b><span>ONE CREATIVE TEAM</span><b>✦</b>
             </div>
           </div>
         </section>
@@ -136,7 +136,7 @@ export default function Home() {
                   <img src={movement.image} alt={movement.alt} loading="lazy" />
                 </div>
                 <div className="film-label">
-                  <span>V/V — A{index + 1}</span>
+                  <span>DP — A{index + 1}</span>
                   <span>{movement.note}</span>
                 </div>
                 {movement.id === "release" && (
@@ -150,7 +150,7 @@ export default function Home() {
         </section>
 
         <section className="amplitude-strip" aria-label="Our creative approach">
-          <p className="eyebrow">The Vow / Volume approach</p>
+          <p className="eyebrow">The DJ POSITIV approach</p>
           <div className="amplitude-copy display">
             <span>Real people.</span>
             <span className="outline">Real rhythm.</span>
@@ -248,7 +248,9 @@ export default function Home() {
 
         <section className="closing-cta">
           <div className="closing-ring" aria-hidden="true">
-            <span>VV</span>
+            <i className="pulse-orbit pulse-orbit-one" />
+            <i className="pulse-orbit pulse-orbit-two" />
+            <span>DP</span>
           </div>
           <p className="eyebrow">Now booking 2026—2027</p>
           <h2 className="display">

@@ -6,10 +6,10 @@ type ActivePage = "home" | "about" | "contact";
 export function SiteHeader({ active }: { active: ActivePage }) {
   return (
     <header className="site-header">
-      <Link className="wordmark" href="/" aria-label="Vow Volume home">
-        <span>VOW</span>
+      <Link className="wordmark" href="/" aria-label="DJ POSITIV home">
+        <span>DJ</span>
         <i aria-hidden="true" />
-        <span>VOLUME</span>
+        <span>POSITIV</span>
       </Link>
       <nav aria-label="Main navigation">
         <Link className={active === "home" ? "active" : ""} href="/">Home</Link>
@@ -37,9 +37,9 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="footer-mark">
-        <span>VOW</span>
+        <span>DJ</span>
         <i aria-hidden="true" />
-        <span>VOLUME</span>
+        <span>POSITIV</span>
       </div>
       <div className="footer-grid">
         <p>
@@ -55,12 +55,12 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="footer-label">Enquiries</p>
-          <a href="mailto:hello@vowvolume.studio">hello@vowvolume.studio</a>
+          <a href="mailto:bookings@djpositiv.com">bookings@djpositiv.com</a>
           <p>Italy · Europe · Wherever the story goes</p>
         </div>
       </div>
       <div className="footer-base">
-        <span>© 2026 Vow / Volume</span>
+        <span>© 2026 DJ POSITIV</span>
         <span>Film the feeling. Score the night.</span>
       </div>
     </footer>

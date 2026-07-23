@@ -30,7 +30,7 @@ export default function AboutPage() {
       <SiteHeader active="about" />
       <main className="inner-page">
         <section className="about-hero">
-          <p className="eyebrow">About Vow / Volume</p>
+          <p className="eyebrow">About DJ POSITIV</p>
           <h1 className="display">
             We don&apos;t stand
             <br />
@@ -42,7 +42,7 @@ export default function AboutPage() {
               remembered: what you see, and what you feel when the music starts.
             </p>
             <div className="about-disc" aria-hidden="true">
-              <span>VV</span>
+              <span>DP</span>
             </div>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function AboutPage() {
               beat.
             </p>
             <p>
-              Vow / Volume brings those instincts together. The result is a
+              DJ POSITIV brings those instincts together. The result is a
               quieter presence during the intimate parts, a sharper sense of
               the whole day&apos;s arc, and one less handoff for you to manage.
             </p>
